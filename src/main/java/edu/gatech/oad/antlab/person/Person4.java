@@ -50,11 +50,6 @@ public class Person4 {
     public String toString(String input) {
       return name + calc(input);
     }
-    public static void main(String[] args) {
-        String test = "abc123";
-        Person4 p = new Person4("jahz");
-        System.out.println(p.calc(test));
-    }
 
 }
 
