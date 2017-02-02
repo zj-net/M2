@@ -1,5 +1,5 @@
-defaultTasks 'jar'
-apply plugin: 'java'
+defaultTasks "jar"
+apply plugin: "java"
 
 dependencies {
     compile files('lib/resources.jar')
@@ -21,7 +21,7 @@ jar {
 }
 
 task removeJar(type: Delete) {
-    delete file(new File(jar.destinationDir, jar.archiveName))
+    delete files('AntLab.jar')
 }
 
-clean.dependsOn removeJar
+clean.dependsOn(removeJar)
